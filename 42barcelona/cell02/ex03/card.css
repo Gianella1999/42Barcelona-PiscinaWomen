@@ -1,0 +1,74 @@
+body{
+
+    background-color: #BDD2A1;
+    display: flex; /* Use flexbox for the main container */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    min-height: 100vh; /* Make sure the container takes up the full viewport height */
+
+}
+
+.contenedor {
+    text-align: center;
+}
+
+.tarjeta-perfil {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.imagen {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position:  50% 50%;
+    text-align: center;
+    
+}
+
+.informacion {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+.redes_sociales img{
+
+    width: 30%;
+    height: 25%;
+
+}
+.datos-contacto {
+    list-style: none;
+    padding: 0;
+    background-color:black;
+    color: white;
+    object-position: top;
+    
+}
+
+
