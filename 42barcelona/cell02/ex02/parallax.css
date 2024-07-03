@@ -1,66 +1,54 @@
 
 body {
-
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    border-collapse: collapse;
-}
-.contenido-parallax {
   
-    align-items: center;
-    margin:0;
-    height:0;
-    justify-content: center;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+  margin: 0;
+  padding: 0;
+  
    
 }
 
-.parallax-1 {
-    height: 500px; /* Altura de la sección */
-    background-image: url("fondo1.jpg"); /* Imagen de fondo */
-    background-attachment: fixed; /* Fijar la imagen al desplazarse */
-    background-position: center; /* Posicionar la imagen en el centro */
+section 
+{
+  transform-style: preserve-3d;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+
+}
+
+section h2
+{
+  text-align: center;
+  font-size: 2rem;
+  font-family: cursive, sans-serif;
+}
+
+.no-parallax{
+ 
+    background-color:black;
+    z-index: 999;
+   
+
+}
+.parallax{
+    background-image: url("flores.gif"); /*Imagen de fondo */
+    display: flex;
+    align-items: center;
     background-size: cover; /* Cubrir toda la sección con la imagen */
-    opacity: 0.7;
-    display: flex;
-    align-items: center;
-    
-    
-}
-
-.parallax-2 {
-    height: 400px;
-    background-image: url("fondo2.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.7;
-    display: flex;
-    align-items: center;
-}
-
-.parallax-3 {
-    height: 300px;
-    background-image: url("fondo3.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.7;   
-    display: flex;
-    align-items: center;
+    background-attachment: fixed; /*Fijar la imagen al desplazarse */
+    background-position: center;  /* Posicionar la imagen en el centro */
+    opacity: 0.9; 
+    text-shadow: 2px 2px #393D31; /*sombra de texto*/
    
 }
 
 
-/* Estilos adicionales para el contenido de las secciones */
-
-.parallax-1 h4,
-.parallax-2 h4,
-.parallax-3 h4 {
-    color: #000000; /* Color del texto */
-    text-align: center; /* Alinear el texto en el centro */
-    }
 
 

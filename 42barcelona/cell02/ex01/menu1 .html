@@ -3,28 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juicy Meats - Hamburguesas deliciosas</title>
+  <title> The best Lunch </title>
   <link rel="stylesheet" href="menu1.css">
-  <link rel="icon" type="image/x-icon" href="https://images.vexels.com/media/users/3/129606/isolated/preview/74fb78d3222ba12833ea9275c53a4935-logo-de-hamburguesa.png"> 
+  <link rel="icon" type="image/x-icon" href="comidita.png"> 
 </head>
 <body>
   <header>
-      <nav class="menuCSS3">
-		<ul>
-			
-			<li><a href="#"> Menu</a>
-				<ul>
-					<li><a href="#">Hamburguesa Clásica</a></li>
-					<li><a href="#">Hamburguesa con Tocino</a></li>
-					<li><a href="#">Hamburguesa Vegetariana</a></li>
-					
-				</ul>
-			</li>
-			
-		</ul>
-	</nav>
+    
+	<h1> The best Lunch </h1>
 
   </header>
+
+<!-- Me faltaria agregar algun mensaje que confirmara que se ha enviado, lo quisiera hacer en la misma pagina-->
+  	<div class="menuCSS3">
+		<form method="post">
+			<label for="lunch">What's for lunch?</label>
+			
+			<select id="lunch" name="lunch">
+				<option> Seleccione  </option>
+		  		<option id="pizza"value="pizza">Pizza</option>
+		  		<option id="curry"value="curry">Curry</option>
+		  		<option id="salad" value="salad">Salad</option>
+		  		<option id="ramen" value="ramen">Ramen</option>
+		  		<option id="tacos" value="tacos">Tacos</option>
+			</select>
+			 <input type="submit" value="Send">
+			<!-- <p id="mensaje-envio"  >¡Datos enviados correctamente!</p>  hace falta javascript para dar interactividad-->
+			
+		</form>
+		
+			
+	 
+		</form>	
+		
+		
+    </div>
+
 
 </body>
 
